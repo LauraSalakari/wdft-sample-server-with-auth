@@ -61,6 +61,9 @@ app.use('/api', authRoutes);
 const fileUploads = require('./routes/file-upload.routes')
 app.use('/api', fileUploads);
 
+const stripeRoutes = require("./routes/stripe.routes");
+app.use("/api", stripeRoutes);
+
 
 app.use((req, res, next) => {
   // If no routes match, send them the React HTML.

@@ -134,6 +134,8 @@ router.post('/logout', (req, res) => {
     .send();
 })
 
+
+// router overloads: path, middleware, callback
 router.get("/user", isLoggedIn, (req, res, next) => {
   res.status(200).json(req.session.loggedInUser);
 });

@@ -4,9 +4,9 @@ const multer = require('multer');
 
 // Please add your details here
 cloudinary.config({
-  cloud_name: '',
-  api_key: '',
-  api_secret: ''
+  cloud_name: 'meetpup',
+  api_key: '981685866527714',
+  api_secret: '1eI29J5lqZPog2niagMx7bdWsX8'
 });
 
 const storage = new CloudinaryStorage({
